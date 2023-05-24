@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphing Sine Waves</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="./js/chart.js" defer></script>
+</head>
+<body>
+  <div id="main-container">
+    <h1>Graphing Sine Waves - Explore Amplitude and Frequency</h1>
+    <div class="text">
+  
+<p>Uncover the Dynamic Nature of Sine Waves: Manipulating Frequency and Amplitude</p>
+<p>Dive into the fascinating world of sine waves and witness their transformative potential through the alteration of frequency and amplitude. Let's embark on this journey of exploration:</p>
+<p>At its core, the fundamental sine wave equation awaits:</p>
+<span class="functions">y = sin(x)</span>
+<p>Unlocking the realm of possibilities, we can elevate the amplitude to new heights. Multiply the sine function by your desired factor to witness the expanded scope:</p>
+<span class="functions">y = 2 sin(x)</span>
+<p>Delve even further into the realm of creativity by manipulating the frequency. Multiply the input value by a carefully chosen number to unlock a new wave:</p>
+<span class="functions">y = sin(2x)</span>
+<p>Prepare to be mesmerized as you fine-tune the amplitude and frequency settings below. Experience a vivid array of captivating sine waves, all while the x-axis remains constant, enabling effortless comparisons with the base sine wave.</p>
+    </div>
+    <h2>- Configuration Options -</h2>
+    <div class="text">
+      <label for="amp">Amplitude:</label>
+      <input type="text" size="4" placeholder="A" value="1" id="amp">
+      <br>
+      <label for="period">Frequency:</label>
+      <input type="text" size="4" placeholder="f" value="1" id="period">
+      <br>
+      <br>
+      <span>Create Graph | Clear Graph</span>
+      <br>
+      <button id="enterBtn">Enter</button>
+      <button id="clearBtn">Clear</button>
+      <br>
+    </div>
+    <canvas id="chart"></canvas>
+  </div>
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
